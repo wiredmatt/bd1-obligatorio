@@ -5,7 +5,6 @@
 -- para respetar el siguiente resultado:
 -- CodEquipoLocal | NomEquipoLocal | GolesLocal | CodEquipoVisita | NomEquipoVisita | GolesVisita | Fecha
 
-
 SELECT 
     E1.codEquipo AS CodEquipoLocal,
     E1.nomEquipo AS NomEquipoLocal,

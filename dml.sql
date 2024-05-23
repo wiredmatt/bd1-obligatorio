@@ -15,7 +15,7 @@ INSERT INTO Equipo (codEquipo, nomEquipo, presEquipo, fundacionEquipo, regionEqu
 VALUES ('002', 'FC Barcelona', 'Joan Laporta', '1899-11-29', 'Sur', 'Verde');
 
 INSERT INTO Equipo (codEquipo, nomEquipo, presEquipo, fundacionEquipo, regionEquipo, colorEquipo)
-VALUES ('003', 'Manchester United', 'Joel Glazer', '1878-12-01', 'Norte', 'Verde');
+VALUES ('003', 'FC Manchester United', 'Joel Glazer', '1878-12-01', 'Norte', 'Verde');
 
 INSERT INTO Equipo (codEquipo, nomEquipo, presEquipo, fundacionEquipo, regionEquipo, colorEquipo)
 VALUES ('004', 'Bayern de Múnich', 'Herbert Hainer', '1900-02-27', 'Este', 'Verde');
@@ -53,7 +53,8 @@ VALUES ('0005', '333333333', 'Robert', 'Lewandowski', '1988-08-21', '333333', 'P
 
 INSERT INTO Jugador (carnJug, ciJug, nomJug, apeJug, nacJug, telJug, tipoJug, codEquipo, carnetNro)
 VALUES ('0006', '444444444', 'Pro', 'SinVto', '1982-09-11', '444444', 'Profesional', '004', '123456');
-
+INSERT INTO Jugador (carnJug, ciJug, nomJug, apeJug, nacJug, telJug, tipoJug, codEquipo, carnetNro)
+VALUES ('0007', '666333', 'Pro', 'SinVtoOtro', '1982-02-14', '919191', 'Profesional', '005', '545321');
 
 
 
@@ -173,3 +174,12 @@ INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro
 VALUES ('002', '004', '2023-01-01', 3, 2, '555555', 'Camp Nou');
 INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
 VALUES ('002', '005', '2023-01-01', 4, 1, '555555', 'Camp Nou');
+
+
+-- Partidos para consulta del año actual
+INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
+VALUES ('004', '005', '2024-10-10', 2, 2, '555555', 'Allianz Arena');
+INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
+VALUES ('001', '002', '2024-10-20', 3, 1, '555555', 'Allianz Arena');
+INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
+VALUES ('003', '005', '2024-10-24', 5, 3, '555555', 'Allianz Arena');
