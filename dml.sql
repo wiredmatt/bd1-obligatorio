@@ -1,12 +1,4 @@
 USE "REVISTA_MATEO_CARRIQUI_321268_N2F";
-DELETE FROM Partido WHERE 1=1;
-DELETE FROM Detalle WHERE 1=1;
-DELETE FROM Formulario WHERE 1=1;
-DELETE FROM Arbitro WHERE 1=1;
-DELETE FROM Cancha WHERE 1=1;
-DELETE FROM Jugador WHERE 1=1;
-DELETE FROM Equipo WHERE 1=1;
-
 
 INSERT INTO Equipo (codEquipo, nomEquipo, presEquipo, fundacionEquipo, regionEquipo, colorEquipo)
 VALUES ('001', 'Real Madrid', 'Florentino Pérez', '1902-03-06', 'Sur', 'Verde');
@@ -60,6 +52,9 @@ VALUES ('0007', '666333', 'Pro', 'SinVtoOtro', '1982-02-14', '919191', 'Profesio
 
 
 
+
+
+
 INSERT INTO Cancha (nomCancha, capCancha, codEquipo)
 VALUES ('Santiago Bernabéu', 81044, '001');
 
@@ -74,6 +69,7 @@ VALUES ('Allianz Arena', 75000, '004');
 
 INSERT INTO Cancha (nomCancha, capCancha, codEquipo)
 VALUES ('Allianz Stadium', 41507, '005');
+
 
 
 
@@ -101,6 +97,8 @@ VALUES ('555555', 'referee5@example.com', 'Carlos', 'López', '345678', 'Calle E
 
 
 
+
+
 INSERT INTO Formulario (numForm, fchForm, ciArbitro)
 VALUES (1, '2024-05-20 15:30:00', '111111');
 
@@ -115,6 +113,8 @@ VALUES (4, '2024-05-23 18:00:00', '444444');
 
 INSERT INTO Formulario (numForm, fchForm, ciArbitro)
 VALUES (5, '2024-05-24 19:30:00', '555555');
+
+
 
 
 
@@ -140,6 +140,12 @@ INSERT INTO Detalle (numForm, linDet, cntRojas, cntAmarillas, cntGoles, carnJug)
 VALUES (5, 1, 8, 0, 0, '0005');
 
 
+
+
+
+
+
+
 INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
 VALUES ('001', '002', '2023-01-02', 2, 1, '111111', 'Camp Nou');
 INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
@@ -159,7 +165,6 @@ VALUES ('002', '003', '2023-01-04', 3, 1, '444444', 'Santiago Bernabéu');
 
 INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
 VALUES ('004', '005', '2023-01-01', 2, 2, '555555', 'Allianz Arena');
-
 
 -- Llenar Camp Nou para que salga en la consulta de 9 - 15
 INSERT INTO Partido (codEquipo_local, codEquipo_visita, fecha, GL, GV, ciArbitro, nomCancha)
