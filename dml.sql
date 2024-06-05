@@ -1,5 +1,11 @@
 USE "REVISTA_MATEO_CARRIQUI_321268_N2F";
 
+DELETE FROM Detalle;
+DELETE FROM Partido;
+DELETE FROM Cancha;
+DELETE FROM Jugador;
+DELETE FROM Equipo;
+
 INSERT INTO Equipo (codEquipo, nomEquipo, presEquipo, fundacionEquipo, regionEquipo, colorEquipo)
 VALUES ('001', 'Real Madrid', 'Florentino Pérez', '1902-03-06', 'Sur', 'Verde');
 
